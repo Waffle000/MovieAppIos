@@ -40,6 +40,17 @@
                ReferencedContainer = "container:RawgAppModular.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D341500D2C0656870096476C"
+               BuildableName = "RawgAppModularTests.xctest"
+               BlueprintName = "RawgAppModularTests"
+               ReferencedContainer = "container:RawgAppModular.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
