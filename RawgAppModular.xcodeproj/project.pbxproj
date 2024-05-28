@@ -12,6 +12,8 @@
 		D324C9012C025B7F0099BF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D324C9002C025B7F0099BF0D /* Assets.xcassets */; };
 		D324C9042C025B7F0099BF0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D324C9032C025B7F0099BF0D /* Preview Assets.xcassets */; };
 		D3414FFA2C0653640096476C /* HomeFeature in Frameworks */ = {isa = PBXBuildFile; productRef = D3414FF92C0653640096476C /* HomeFeature */; };
+		D34150022C0655670096476C /* RawgAppModularUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34150012C0655670096476C /* RawgAppModularUITests.swift */; };
+		D34150042C0655670096476C /* RawgAppModularUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34150032C0655670096476C /* RawgAppModularUITestsLaunchTests.swift */; };
 		D3B15CEB2C04E9F200DB5996 /* HomeFeature in Frameworks */ = {isa = PBXBuildFile; productRef = D3B15CEA2C04E9F200DB5996 /* HomeFeature */; };
 		D3B15CEE2C04EA8F00DB5996 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B15CED2C04EA8F00DB5996 /* DependencyInjection.swift */; };
 		D3B15CF12C04EABD00DB5996 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = D3B15CF02C04EABD00DB5996 /* Swinject */; };
@@ -20,12 +22,25 @@
 		D3B15CF92C06084900DB5996 /* FavoriteFeature in Frameworks */ = {isa = PBXBuildFile; productRef = D3B15CF82C06084900DB5996 /* FavoriteFeature */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D34150052C0655670096476C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D324C8F12C025B7E0099BF0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D324C8F82C025B7E0099BF0D;
+			remoteInfo = RawgAppModular;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		D324C8F92C025B7E0099BF0D /* RawgAppModular.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RawgAppModular.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D324C8FC2C025B7E0099BF0D /* RawgAppModularApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawgAppModularApp.swift; sourceTree = "<group>"; };
 		D324C8FE2C025B7E0099BF0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D324C9002C025B7F0099BF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D324C9032C025B7F0099BF0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3414FFF2C0655670096476C /* RawgAppModularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RawgAppModularUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34150012C0655670096476C /* RawgAppModularUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawgAppModularUITests.swift; sourceTree = "<group>"; };
+		D34150032C0655670096476C /* RawgAppModularUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawgAppModularUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D3B15CED2C04EA8F00DB5996 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -43,6 +58,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3414FFC2C0655670096476C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -50,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				D324C8FB2C025B7E0099BF0D /* RawgAppModular */,
+				D34150002C0655670096476C /* RawgAppModularUITests */,
 				D324C8FA2C025B7E0099BF0D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				D324C8F92C025B7E0099BF0D /* RawgAppModular.app */,
+				D3414FFF2C0655670096476C /* RawgAppModularUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +104,15 @@
 				D324C9032C025B7F0099BF0D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D34150002C0655670096476C /* RawgAppModularUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D34150012C0655670096476C /* RawgAppModularUITests.swift */,
+				D34150032C0655670096476C /* RawgAppModularUITestsLaunchTests.swift */,
+			);
+			path = RawgAppModularUITests;
 			sourceTree = "<group>";
 		};
 		D3B15CEC2C04EA8200DB5996 /* DI */ = {
@@ -118,6 +151,24 @@
 			productReference = D324C8F92C025B7E0099BF0D /* RawgAppModular.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D3414FFE2C0655670096476C /* RawgAppModularUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D34150072C0655670096476C /* Build configuration list for PBXNativeTarget "RawgAppModularUITests" */;
+			buildPhases = (
+				D3414FFB2C0655670096476C /* Sources */,
+				D3414FFC2C0655670096476C /* Frameworks */,
+				D3414FFD2C0655670096476C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D34150062C0655670096476C /* PBXTargetDependency */,
+			);
+			name = RawgAppModularUITests;
+			productName = RawgAppModularUITests;
+			productReference = D3414FFF2C0655670096476C /* RawgAppModularUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -130,6 +181,10 @@
 				TargetAttributes = {
 					D324C8F82C025B7E0099BF0D = {
 						CreatedOnToolsVersion = 15.2;
+					};
+					D3414FFE2C0655670096476C = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = D324C8F82C025B7E0099BF0D;
 					};
 				};
 			};
@@ -151,6 +206,7 @@
 			projectRoot = "";
 			targets = (
 				D324C8F82C025B7E0099BF0D /* RawgAppModular */,
+				D3414FFE2C0655670096476C /* RawgAppModularUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -162,6 +218,13 @@
 			files = (
 				D324C9042C025B7F0099BF0D /* Preview Assets.xcassets in Resources */,
 				D324C9012C025B7F0099BF0D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3414FFD2C0655670096476C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +241,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3414FFB2C0655670096476C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D34150042C0655670096476C /* RawgAppModularUITestsLaunchTests.swift in Sources */,
+				D34150022C0655670096476C /* RawgAppModularUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D34150062C0655670096476C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D324C8F82C025B7E0099BF0D /* RawgAppModular */;
+			targetProxy = D34150052C0655670096476C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D324C9052C025B7F0099BF0D /* Debug */ = {
@@ -358,6 +438,40 @@
 			};
 			name = Release;
 		};
+		D34150082C0655670096476C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QDD78HGUD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waffle.RawgAppModularUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RawgAppModular;
+			};
+			name = Debug;
+		};
+		D34150092C0655670096476C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9QDD78HGUD;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waffle.RawgAppModularUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RawgAppModular;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -375,6 +489,15 @@
 			buildConfigurations = (
 				D324C9082C025B7F0099BF0D /* Debug */,
 				D324C9092C025B7F0099BF0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D34150072C0655670096476C /* Build configuration list for PBXNativeTarget "RawgAppModularUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D34150082C0655670096476C /* Debug */,
+				D34150092C0655670096476C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
