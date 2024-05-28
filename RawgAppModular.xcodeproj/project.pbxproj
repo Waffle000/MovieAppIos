@@ -47,6 +47,7 @@
 		D3414FFF2C0655670096476C /* RawgAppModularUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RawgAppModularUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D341500E2C0656870096476C /* RawgAppModularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RawgAppModularTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D34150102C0656880096476C /* RawgAppModularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawgAppModularTests.swift; sourceTree = "<group>"; };
+		D34150172C065AC00096476C /* RawgAppModular.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = RawgAppModular.xctestplan; sourceTree = "<group>"; };
 		D3B15CED2C04EA8F00DB5996 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -84,6 +85,7 @@
 		D324C8F02C025B7E0099BF0D = {
 			isa = PBXGroup;
 			children = (
+				D34150172C065AC00096476C /* RawgAppModular.xctestplan */,
 				D324C8FB2C025B7E0099BF0D /* RawgAppModular */,
 				D341500F2C0656880096476C /* RawgAppModularTests */,
 				D324C8FA2C025B7E0099BF0D /* Products */,

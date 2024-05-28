@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "C35AB4F2-F7F4-46AD-BC7D-0FB7C2B63417",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:RawgAppModular.xcodeproj",
+        "identifier" : "D341500D2C0656870096476C",
+        "name" : "RawgAppModularTests"
+      }
+    }
+  ],
+  "version" : 1
+}
