@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		D324C8FF2C025B7E0099BF0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D324C8FE2C025B7E0099BF0D /* ContentView.swift */; };
 		D324C9012C025B7F0099BF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D324C9002C025B7F0099BF0D /* Assets.xcassets */; };
 		D324C9042C025B7F0099BF0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D324C9032C025B7F0099BF0D /* Preview Assets.xcassets */; };
+		D3414FFA2C0653640096476C /* HomeFeature in Frameworks */ = {isa = PBXBuildFile; productRef = D3414FF92C0653640096476C /* HomeFeature */; };
 		D3B15CEB2C04E9F200DB5996 /* HomeFeature in Frameworks */ = {isa = PBXBuildFile; productRef = D3B15CEA2C04E9F200DB5996 /* HomeFeature */; };
 		D3B15CEE2C04EA8F00DB5996 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B15CED2C04EA8F00DB5996 /* DependencyInjection.swift */; };
 		D3B15CF12C04EABD00DB5996 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = D3B15CF02C04EABD00DB5996 /* Swinject */; };
@@ -35,6 +36,7 @@
 			files = (
 				D3B15CEB2C04E9F200DB5996 /* HomeFeature in Frameworks */,
 				D3B15CF62C0598D800DB5996 /* DetailFeature in Frameworks */,
+				D3414FFA2C0653640096476C /* HomeFeature in Frameworks */,
 				D3B15CF32C04EABD00DB5996 /* Swinject-Dynamic in Frameworks */,
 				D3B15CF12C04EABD00DB5996 /* Swinject in Frameworks */,
 				D3B15CF92C06084900DB5996 /* FavoriteFeature in Frameworks */,
@@ -110,6 +112,7 @@
 				D3B15CF22C04EABD00DB5996 /* Swinject-Dynamic */,
 				D3B15CF52C0598D800DB5996 /* DetailFeature */,
 				D3B15CF82C06084900DB5996 /* FavoriteFeature */,
+				D3414FF92C0653640096476C /* HomeFeature */,
 			);
 			productName = RawgAppModular;
 			productReference = D324C8F92C025B7E0099BF0D /* RawgAppModular.app */;
@@ -140,10 +143,8 @@
 			);
 			mainGroup = D324C8F02C025B7E0099BF0D;
 			packageReferences = (
-				D3B15CE92C04E9F200DB5996 /* XCLocalSwiftPackageReference "../HomeFeature" */,
 				D3B15CEF2C04EABD00DB5996 /* XCRemoteSwiftPackageReference "Swinject" */,
-				D3B15CF42C0598D800DB5996 /* XCLocalSwiftPackageReference "../DetailFeature" */,
-				D3B15CF72C06084900DB5996 /* XCLocalSwiftPackageReference "../FavoriteFeature" */,
+				D3414FF82C0653640096476C /* XCRemoteSwiftPackageReference "HomeFeature" */,
 			);
 			productRefGroup = D324C8FA2C025B7E0099BF0D /* Products */;
 			projectDirPath = "";
@@ -380,22 +381,15 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		D3B15CE92C04E9F200DB5996 /* XCLocalSwiftPackageReference "../HomeFeature" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../HomeFeature;
-		};
-		D3B15CF42C0598D800DB5996 /* XCLocalSwiftPackageReference "../DetailFeature" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../DetailFeature;
-		};
-		D3B15CF72C06084900DB5996 /* XCLocalSwiftPackageReference "../FavoriteFeature" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../FavoriteFeature;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
+		D3414FF82C0653640096476C /* XCRemoteSwiftPackageReference "HomeFeature" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Waffle000/HomeFeature.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		D3B15CEF2C04EABD00DB5996 /* XCRemoteSwiftPackageReference "Swinject" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/Swinject.git";
@@ -407,6 +401,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		D3414FF92C0653640096476C /* HomeFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3414FF82C0653640096476C /* XCRemoteSwiftPackageReference "HomeFeature" */;
+			productName = HomeFeature;
+		};
 		D3B15CEA2C04E9F200DB5996 /* HomeFeature */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = HomeFeature;

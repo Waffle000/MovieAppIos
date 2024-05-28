@@ -19,6 +19,42 @@
       }
     },
     {
+      "identity" : "detailfeature",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Waffle000/DetailFeature.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "939d8af6f188b05de227b7dbf3c92451ac71e870"
+      }
+    },
+    {
+      "identity" : "favoritefeature",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Waffle000/FavoriteFeature.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "14034d5f38695d1277a0d1872e022df093da54b3"
+      }
+    },
+    {
+      "identity" : "homefeature",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Waffle000/HomeFeature.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "948a693017fec59f72802ce331def44f286adb4e"
+      }
+    },
+    {
+      "identity" : "profilefeature",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Waffle000/ProfileFeature.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7b251b39ebed788d6deb676aed1cfd5652f0f9e4"
+      }
+    },
+    {
       "identity" : "rxswift",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ReactiveX/RxSwift.git",
