@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,12 @@
 		D324C8FF2C025B7E0099BF0D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D324C8FE2C025B7E0099BF0D /* ContentView.swift */; };
 		D324C9012C025B7F0099BF0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D324C9002C025B7F0099BF0D /* Assets.xcassets */; };
 		D324C9042C025B7F0099BF0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D324C9032C025B7F0099BF0D /* Preview Assets.xcassets */; };
+		D3B15CEB2C04E9F200DB5996 /* HomeFeature in Frameworks */ = {isa = PBXBuildFile; productRef = D3B15CEA2C04E9F200DB5996 /* HomeFeature */; };
+		D3B15CEE2C04EA8F00DB5996 /* DependencyInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B15CED2C04EA8F00DB5996 /* DependencyInjection.swift */; };
+		D3B15CF12C04EABD00DB5996 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = D3B15CF02C04EABD00DB5996 /* Swinject */; };
+		D3B15CF32C04EABD00DB5996 /* Swinject-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = D3B15CF22C04EABD00DB5996 /* Swinject-Dynamic */; };
+		D3B15CF62C0598D800DB5996 /* DetailFeature in Frameworks */ = {isa = PBXBuildFile; productRef = D3B15CF52C0598D800DB5996 /* DetailFeature */; };
+		D3B15CF92C06084900DB5996 /* FavoriteFeature in Frameworks */ = {isa = PBXBuildFile; productRef = D3B15CF82C06084900DB5996 /* FavoriteFeature */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,7 @@
 		D324C8FE2C025B7E0099BF0D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D324C9002C025B7F0099BF0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D324C9032C025B7F0099BF0D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D3B15CED2C04EA8F00DB5996 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3B15CEB2C04E9F200DB5996 /* HomeFeature in Frameworks */,
+				D3B15CF62C0598D800DB5996 /* DetailFeature in Frameworks */,
+				D3B15CF32C04EABD00DB5996 /* Swinject-Dynamic in Frameworks */,
+				D3B15CF12C04EABD00DB5996 /* Swinject in Frameworks */,
+				D3B15CF92C06084900DB5996 /* FavoriteFeature in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +63,7 @@
 		D324C8FB2C025B7E0099BF0D /* RawgAppModular */ = {
 			isa = PBXGroup;
 			children = (
+				D3B15CEC2C04EA8200DB5996 /* DI */,
 				D324C8FC2C025B7E0099BF0D /* RawgAppModularApp.swift */,
 				D324C8FE2C025B7E0099BF0D /* ContentView.swift */,
 				D324C9002C025B7F0099BF0D /* Assets.xcassets */,
@@ -65,6 +78,14 @@
 				D324C9032C025B7F0099BF0D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3B15CEC2C04EA8200DB5996 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				D3B15CED2C04EA8F00DB5996 /* DependencyInjection.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +104,13 @@
 			dependencies = (
 			);
 			name = RawgAppModular;
+			packageProductDependencies = (
+				D3B15CEA2C04E9F200DB5996 /* HomeFeature */,
+				D3B15CF02C04EABD00DB5996 /* Swinject */,
+				D3B15CF22C04EABD00DB5996 /* Swinject-Dynamic */,
+				D3B15CF52C0598D800DB5996 /* DetailFeature */,
+				D3B15CF82C06084900DB5996 /* FavoriteFeature */,
+			);
 			productName = RawgAppModular;
 			productReference = D324C8F92C025B7E0099BF0D /* RawgAppModular.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +139,12 @@
 				Base,
 			);
 			mainGroup = D324C8F02C025B7E0099BF0D;
+			packageReferences = (
+				D3B15CE92C04E9F200DB5996 /* XCLocalSwiftPackageReference "../HomeFeature" */,
+				D3B15CEF2C04EABD00DB5996 /* XCRemoteSwiftPackageReference "Swinject" */,
+				D3B15CF42C0598D800DB5996 /* XCLocalSwiftPackageReference "../DetailFeature" */,
+				D3B15CF72C06084900DB5996 /* XCLocalSwiftPackageReference "../FavoriteFeature" */,
+			);
 			productRefGroup = D324C8FA2C025B7E0099BF0D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +173,7 @@
 			files = (
 				D324C8FF2C025B7E0099BF0D /* ContentView.swift in Sources */,
 				D324C8FD2C025B7E0099BF0D /* RawgAppModularApp.swift in Sources */,
+				D3B15CEE2C04EA8F00DB5996 /* DependencyInjection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +379,57 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D3B15CE92C04E9F200DB5996 /* XCLocalSwiftPackageReference "../HomeFeature" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../HomeFeature;
+		};
+		D3B15CF42C0598D800DB5996 /* XCLocalSwiftPackageReference "../DetailFeature" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../DetailFeature;
+		};
+		D3B15CF72C06084900DB5996 /* XCLocalSwiftPackageReference "../FavoriteFeature" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../FavoriteFeature;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D3B15CEF2C04EABD00DB5996 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.8;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D3B15CEA2C04E9F200DB5996 /* HomeFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = HomeFeature;
+		};
+		D3B15CF02C04EABD00DB5996 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3B15CEF2C04EABD00DB5996 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		D3B15CF22C04EABD00DB5996 /* Swinject-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3B15CEF2C04EABD00DB5996 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = "Swinject-Dynamic";
+		};
+		D3B15CF52C0598D800DB5996 /* DetailFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DetailFeature;
+		};
+		D3B15CF82C06084900DB5996 /* FavoriteFeature */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FavoriteFeature;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D324C8F12C025B7E0099BF0D /* Project object */;
 }
