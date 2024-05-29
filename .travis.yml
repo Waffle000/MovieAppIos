@@ -1,0 +1,18 @@
+language: swift
+os: osx
+osx_image: xcode15.2 # Sesuaikan dengan versi Xcode yang Anda gunakan
+
+branches:
+  only:
+    - main 
+
+script:
+  - xcodebuild clean build -workspace RawgAppModular.xcodeproj -scheme RawgAppModular -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 15,OS=17.1' ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO | xcpretty
+
+# Opsional: konfigurasi untuk pemberitahuan email
+notifications:
+  email:
+    recipients:
+      - enrico.maricar@gmail.com # Ganti dengan email Anda
+    on_success: always # Hanya kirim email pada keberhasilan build
+    on_failure: always # Hanya kirim email pada kegagalan build
