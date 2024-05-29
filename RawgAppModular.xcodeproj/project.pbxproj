@@ -39,7 +39,7 @@
 		D3B15CED2C04EA8F00DB5996 /* DependencyInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjection.swift; sourceTree = "<group>"; };
 		D3E841382C0665F50091A8C0 /* RawgAppModularTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RawgAppModularTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3E8413A2C0665F50091A8C0 /* RawgAppModularTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawgAppModularTests.swift; sourceTree = "<group>"; };
-		D3E841412C0666540091A8C0 /* RawgAppModular.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = RawgAppModular.xctestplan; path = ../RawgAppModular.xctestplan; sourceTree = "<group>"; };
+		D3E841422C06CF120091A8C0 /* SchemeTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = file; path = SchemeTestPlan.xctestplan; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,6 @@
 		D324C8F02C025B7E0099BF0D = {
 			isa = PBXGroup;
 			children = (
-				D3E841412C0666540091A8C0 /* RawgAppModular.xctestplan */,
 				D324C8FB2C025B7E0099BF0D /* RawgAppModular */,
 				D3E841392C0665F50091A8C0 /* RawgAppModularTests */,
 				D324C8FA2C025B7E0099BF0D /* Products */,
@@ -116,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				D3E8413A2C0665F50091A8C0 /* RawgAppModularTests.swift */,
+				D3E841422C06CF120091A8C0 /* SchemeTestPlan.xctestplan */,
 			);
 			path = RawgAppModularTests;
 			sourceTree = "<group>";
